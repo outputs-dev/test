@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 /// to maintain consistency and avoid confusion,
 /// using CamelCase naming convention.
 class Palette {
-
   factory Palette() => _instance;
   Palette._();
 
@@ -64,15 +63,6 @@ class Palette {
     }
   }
 
-  Color textColor1() {
-    switch (_brightness) {
-      case Brightness.light:
-        return _textColor1;
-      case Brightness.dark:
-        return _textColor1;
-    }
-  }
-
   Color textColor2() {
     switch (_brightness) {
       case Brightness.light:
@@ -82,14 +72,6 @@ class Palette {
     }
   }
 
-  Color black() {
-    switch (_brightness) {
-      case Brightness.light:
-        return _black;
-      case Brightness.dark:
-        return _black;
-    }
-  }
   Color textColor3() {
     switch (_brightness) {
       case Brightness.light:
@@ -98,6 +80,7 @@ class Palette {
         return _textColor3;
     }
   }
+
   Color buttonColor1() {
     switch (_brightness) {
       case Brightness.light:
@@ -107,7 +90,6 @@ class Palette {
     }
   }
 
-  static const _black = Color(0xFF000000);
   static const _white = Color(0xFFFFFFFF);
 
   static const _darkDark1 = Color(0xFF717784);
@@ -116,8 +98,8 @@ class Palette {
 
   static const _buttonColor = Color(0xFF75563D);
   static const _buttonColor1 = Color(0xFF3F4A5E);
-  static const _textColor1 = Color(0xFF625F5E);
   static const _textColor2 = Color(0xFF0E121B);
+
   /// rgba(65, 64, 66, 0.80);
   static const _textColor3 = Color(0xFF615E5E);
 }

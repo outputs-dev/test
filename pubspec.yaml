@@ -23,7 +23,8 @@ dev_dependencies:
   flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
-  textstyle_generator: ^0.1.0
+  # This is my package that generates text styles.
+  textstyle_generator: ^0.1.1
 
 flutter:
 
@@ -97,6 +98,60 @@ flutter:
     - family: Rufina-Regular
       fonts:
         - asset: assets/fonts/Rufina-Regular.ttf
+    - family: SF-Pro-Display-Black
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-Black.otf
+    - family: SF-Pro-Display-BlackItalic
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-BlackItalic.otf
+    - family: SF-Pro-Display-Bold
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-Bold.otf
+    - family: SF-Pro-Display-BoldItalic
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-BoldItalic.otf
+    - family: SF-Pro-Display-Heavy
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-Heavy.otf
+    - family: SF-Pro-Display-HeavyItalic
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-HeavyItalic.otf
+    - family: SF-Pro-Display-Light
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-Light.otf
+    - family: SF-Pro-Display-LightItalic
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-LightItalic.otf
+    - family: SF-Pro-Display-Medium
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-Medium.otf
+    - family: SF-Pro-Display-MediumItalic
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-MediumItalic.otf
+    - family: SF-Pro-Display-Regular
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-Regular.otf
+    - family: SF-Pro-Display-RegularItalic
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-RegularItalic.otf
+    - family: SF-Pro-Display-Semibold
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-Semibold.otf
+    - family: SF-Pro-Display-SemiboldItalic
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-SemiboldItalic.otf
+    - family: SF-Pro-Display-Thin
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-Thin.otf
+    - family: SF-Pro-Display-ThinItalic
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-ThinItalic.otf
+    - family: SF-Pro-Display-Ultralight
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-Ultralight.otf
+    - family: SF-Pro-Display-UltralightItalic
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-UltralightItalic.otf
 flutter_gen:
   output: lib/generated_assets/
   integrations:

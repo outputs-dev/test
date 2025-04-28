@@ -69,4 +69,61 @@ class FontFamily {
 
   /// Font family: Rufina-Regular
   static const String rufinaRegular = 'Rufina-Regular';
+
+  /// Font family: SF-Pro-Display-Black
+  static const String sFProDisplayBlack = 'SF-Pro-Display-Black';
+
+  /// Font family: SF-Pro-Display-BlackItalic
+  static const String sFProDisplayBlackItalic = 'SF-Pro-Display-BlackItalic';
+
+  /// Font family: SF-Pro-Display-Bold
+  static const String sFProDisplayBold = 'SF-Pro-Display-Bold';
+
+  /// Font family: SF-Pro-Display-BoldItalic
+  static const String sFProDisplayBoldItalic = 'SF-Pro-Display-BoldItalic';
+
+  /// Font family: SF-Pro-Display-Heavy
+  static const String sFProDisplayHeavy = 'SF-Pro-Display-Heavy';
+
+  /// Font family: SF-Pro-Display-HeavyItalic
+  static const String sFProDisplayHeavyItalic = 'SF-Pro-Display-HeavyItalic';
+
+  /// Font family: SF-Pro-Display-Light
+  static const String sFProDisplayLight = 'SF-Pro-Display-Light';
+
+  /// Font family: SF-Pro-Display-LightItalic
+  static const String sFProDisplayLightItalic = 'SF-Pro-Display-LightItalic';
+
+  /// Font family: SF-Pro-Display-Medium
+  static const String sFProDisplayMedium = 'SF-Pro-Display-Medium';
+
+  /// Font family: SF-Pro-Display-MediumItalic
+  static const String sFProDisplayMediumItalic = 'SF-Pro-Display-MediumItalic';
+
+  /// Font family: SF-Pro-Display-Regular
+  static const String sFProDisplayRegular = 'SF-Pro-Display-Regular';
+
+  /// Font family: SF-Pro-Display-RegularItalic
+  static const String sFProDisplayRegularItalic =
+      'SF-Pro-Display-RegularItalic';
+
+  /// Font family: SF-Pro-Display-Semibold
+  static const String sFProDisplaySemibold = 'SF-Pro-Display-Semibold';
+
+  /// Font family: SF-Pro-Display-SemiboldItalic
+  static const String sFProDisplaySemiboldItalic =
+      'SF-Pro-Display-SemiboldItalic';
+
+  /// Font family: SF-Pro-Display-Thin
+  static const String sFProDisplayThin = 'SF-Pro-Display-Thin';
+
+  /// Font family: SF-Pro-Display-ThinItalic
+  static const String sFProDisplayThinItalic = 'SF-Pro-Display-ThinItalic';
+
+  /// Font family: SF-Pro-Display-Ultralight
+  static const String sFProDisplayUltralight = 'SF-Pro-Display-Ultralight';
+
+  /// Font family: SF-Pro-Display-UltralightItalic
+  static const String sFProDisplayUltralightItalic =
+      'SF-Pro-Display-UltralightItalic';
 }
