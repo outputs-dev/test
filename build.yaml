@@ -1,0 +1,9 @@
+targets:
+  $default:
+    builders:
+      textstyle_generator|textstyle_builder:
+        options:
+          font_path: assets/fonts/
+          min: 12
+          max: 36
+          default_palette: Palette().defaultText()
