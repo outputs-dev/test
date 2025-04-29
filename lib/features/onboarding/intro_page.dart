@@ -102,7 +102,7 @@ class IntroPage extends StatelessWidget {
 
                           /// The "Tiempos Headline" font is a commercial font,
                           /// so it has been replaced with Inter.
-                          style: TextStyles.inter32w400().copyWith(
+                          style: TextStyles.tiemposheadline32w400().copyWith(
                             letterSpacing: -0.32,
                           ),
                           textAlign: TextAlign.center,

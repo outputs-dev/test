@@ -24,7 +24,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   # This is my package that generates text styles.
-  textstyle_generator: ^0.1.1
+  textstyle_generator: ^0.1.2
 
 flutter:
 
@@ -152,6 +152,10 @@ flutter:
     - family: SF-Pro-Display-UltralightItalic
       fonts:
         - asset: assets/fonts/SF-Pro-Display-UltralightItalic.otf
+    - family: TiemposHeadline-Regular
+      fonts:
+        - asset: assets/fonts/TiemposHeadline-Regular.otf
+
 flutter_gen:
   output: lib/generated_assets/
   integrations:
