@@ -1,4 +1,5 @@
 import 'dart:math' as math;
+import 'dart:ui';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ class IntroPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
     return Scaffold(
       body: Stack(
         children: [
@@ -25,30 +27,23 @@ class IntroPage extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          Positioned.fill(
-            child: ShaderMask(
-              shaderCallback: (Rect bounds) {
-                return const LinearGradient(
-                  colors: [Color(0xFF3F4A5E), Color(0x003F4A5E)],
-                  stops: [0.0, 1.0],
-                  transform: GradientRotation(90 * math.pi / 180),
-                ).createShader(bounds);
-              },
-              blendMode: BlendMode.overlay,
-              child: Container(color: Colors.white.withAlpha(0)),
-            ),
-          ),
-          Positioned.fill(
-            child: Container(
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [Color(0x00FAF4F0), Color(0xFFFAF4F0)],
-                  stops: [0.20, 0.67],
-                  transform: GradientRotation(90 * math.pi / 180),
-                ),
-              ),
-            ),
-          ),
+
+          // Positioned.fill(
+          //   child: Container(
+          //     decoration: const BoxDecoration(
+          //       gradient: LinearGradient(
+          //         begin: Alignment.bottomCenter,
+          //         end: Alignment.topCenter,
+          //         colors: [
+          //           Color(0xFFFAF4F0), // цвет внизу
+          //           Color(0x00FAF4F0), // полностью прозрачный
+          //         ],
+          //         stops: [0.0, 0.81], // исчезает на 81% от высоты
+          //       ),
+          //     ),
+          //   ),
+          // ),
+
           Positioned(
             left: 0,
             right: 0,
@@ -98,23 +93,26 @@ class IntroPage extends StatelessWidget {
                         StepIndicator(step: 1),
                         const Gap(12),
                         Text(
-                          LocaleKeys.discoverThroughStars.tr().toUpperCase(),
+                          LocaleKeys.discoverThroughStars.tr(),
 
                           /// The "Tiempos Headline" font is a commercial font,
                           /// so it has been replaced with Inter.
-                          style: TextStyles.tiemposheadline32w400().copyWith(
+                          style: TextStyles.tiemposheadline32w400(h:1).copyWith(
                             letterSpacing: -0.32,
                           ),
                           textAlign: TextAlign.center,
                         ),
-                        const Gap(8),
-                        Text(
-                          LocaleKeys.exploreSelfAwarenessAstrology.tr(),
-                          style: TextStyles.inter16w400(
-                            c: Palette().darkDark1(),
-                            h: 1.5,
-                          ).copyWith(letterSpacing: -0.16),
-                          textAlign: TextAlign.center,
+                        const Gap(10),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                          child: Text(
+                            LocaleKeys.exploreSelfAwarenessAstrology.tr(),
+                            style: TextStyles.inter16w400(
+                              c: Palette().darkDark1(),
+                              h: 1.5,
+                            ).copyWith(letterSpacing: -0.16),
+                            textAlign: TextAlign.center,
+                          ),
                         ),
                         const Gap(32),
                         MainButton(),
@@ -147,6 +145,47 @@ class IntroPage extends StatelessWidget {
                     ),
                   ),
                 ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+
+class WelcomePage extends StatelessWidget {
+  const WelcomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+        children: [
+          // 🌌 Фон
+          Positioned.fill(
+            child: Image.asset(
+              'assets/images/background.png',
+              fit: BoxFit.cover,
+            ),
+          ),
+
+          // 🟣 Один градиент, начинающийся снизу и исчезающий к 0.81
+          Positioned.fill(
+            child: Container(
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.bottomCenter,
+                  end: Alignment.topCenter,
+                  colors: [
+                    Color(0xFFFAF4F0), // цвет внизу
+                    Color(0x00FAF4F0), // полностью прозрачный
+                  ],
+                  stops: [0.0, 0.81], // исчезает на 81% от высоты
+                ),
               ),
             ),
           ),
