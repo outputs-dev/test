@@ -1,4 +1,3 @@
-import 'dart:math' as math;
 import 'dart:ui';
 
 import 'package:easy_localization/easy_localization.dart';
@@ -17,7 +16,6 @@ class IntroPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screenSize = MediaQuery.of(context).size;
     return Scaffold(
       body: Stack(
         children: [
@@ -27,23 +25,6 @@ class IntroPage extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-
-          // Positioned.fill(
-          //   child: Container(
-          //     decoration: const BoxDecoration(
-          //       gradient: LinearGradient(
-          //         begin: Alignment.bottomCenter,
-          //         end: Alignment.topCenter,
-          //         colors: [
-          //           Color(0xFFFAF4F0), // цвет внизу
-          //           Color(0x00FAF4F0), // полностью прозрачный
-          //         ],
-          //         stops: [0.0, 0.81], // исчезает на 81% от высоты
-          //       ),
-          //     ),
-          //   ),
-          // ),
-
           Positioned(
             left: 0,
             right: 0,
@@ -145,47 +126,6 @@ class IntroPage extends StatelessWidget {
                     ),
                   ),
                 ],
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-
-
-
-class WelcomePage extends StatelessWidget {
-  const WelcomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-          // 🌌 Фон
-          Positioned.fill(
-            child: Image.asset(
-              'assets/images/background.png',
-              fit: BoxFit.cover,
-            ),
-          ),
-
-          // 🟣 Один градиент, начинающийся снизу и исчезающий к 0.81
-          Positioned.fill(
-            child: Container(
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.bottomCenter,
-                  end: Alignment.topCenter,
-                  colors: [
-                    Color(0xFFFAF4F0), // цвет внизу
-                    Color(0x00FAF4F0), // полностью прозрачный
-                  ],
-                  stops: [0.0, 0.81], // исчезает на 81% от высоты
-                ),
               ),
             ),
           ),
